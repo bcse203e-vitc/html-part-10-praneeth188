@@ -1,0 +1,41 @@
+.gallery-container {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  margin: 50px auto;
+}
+
+.gallery-image {
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 5px solid white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#image1 {
+  left: 50px;
+  top: 50px;
+  z-index: 1;
+  transform: rotate(-5deg);
+}
+
+#image2 {
+  left: 150px;
+  top: 100px;
+  z-index: 2;
+  transform: rotate(3deg);
+}
+
+#image3 {
+  left: 250px;
+  top: 150px;
+  z-index: 3;
+  transform: rotate(-2deg);
+}
+
+.gallery-image:hover {
+  transform: scale(1.05) rotate(0deg) !important;
+}

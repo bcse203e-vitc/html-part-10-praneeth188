@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizza Order Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Pizza Order Form</h1>
+      <form id="pizzaForm">
+        <fieldset>
+          <legend>Pizza Size</legend>
+          <div class="radio-group">
+            <input type="radio" id="small" name="size" value="small" checked />
+            <label for="small">Small</label>
+
+            <input type="radio" id="medium" name="size" value="medium" />
+            <label for="medium">Medium</label>
+
+            <input type="radio" id="large" name="size" value="large" />
+            <label for="large">Large</label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Toppings</legend>
+          <div class="checkbox-group">
+            <div>
+              <input
+                type="checkbox"
+                id="cheese"
+                name="toppings"
+                value="Cheese"
+              />
+              <label for="cheese">Cheese</label>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                id="pepperoni"
+                name="toppings"
+                value="Pepperoni"
+              />
+              <label for="pepperoni">Pepperoni</label>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                id="mushrooms"
+                name="toppings"
+                value="Mushrooms"
+              />
+              <label for="mushrooms">Mushrooms</label>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                id="olives"
+                name="toppings"
+                value="Olives"
+              />
+              <label for="olives">Olives</label>
+            </div>
+          </div>
+        </fieldset>
+
+        <button type="submit">Place Order</button>
+      </form>
+      <div id="orderSummary"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

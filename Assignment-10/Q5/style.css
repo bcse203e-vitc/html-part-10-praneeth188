@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.button-container {
+  margin: 20px 0;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Light Theme (default) */
+body.light {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+/* Dark Theme */
+body.dark {
+  background-color: #333333;
+  color: #ffffff;
+}
